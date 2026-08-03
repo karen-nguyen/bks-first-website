@@ -1,7 +1,18 @@
 {
- "text": {},
+ "text": {
+  "join|p:div:nth-of-type(1)>div:nth-of-type(1)>div:nth-of-type(3)>div:nth-of-type(1)>div:nth-of-type(4)>p:nth-of-type(1)": "Any time. Teams are busiest during their competition season, but new members are taken all year.",
+  "join|p:div:nth-of-type(1)>div:nth-of-type(1)>div:nth-of-type(3)>div:nth-of-type(1)>div:nth-of-type(3)>p:nth-of-type(1)": "Membership is a $50 club fee for the year, and it covers all five teams. Materials and entry fees are covered by sponsorship and fundraising. Ask a faculty sponsor if cost is a concern.",
+  "join|p:div:nth-of-type(1)>div:nth-of-type(1)>div:nth-of-type(1)>h1:nth-of-type(1)": "Join STEMWorks",
+  "join|p:div:nth-of-type(1)>div:nth-of-type(1)>div:nth-of-type(1)>p:nth-of-type(1)": "No experience required and no application to write. You join STEMWorks as a whole — one $50 club fee gives you access to all five teams, so fill out the interest form, come to a meeting in Room 140A, and work on whichever builds interest you.",
+  "sponsors|p:div:nth-of-type(1)>div:nth-of-type(1)>div:nth-of-type(5)>span:nth-of-type(1)": "Current sponsors:"
+ },
  "href": {},
  "img": {},
  "alt": {},
- "crop": {}
+ "crop": {
+  "home|k:home-band-1": {
+   "pos": "50% 50%",
+   "zoom": 1
+  }
+ }
 }
