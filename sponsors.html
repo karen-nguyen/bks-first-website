@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/modernist-370d9b9f-2d9d-4345-a6f3-7e9afb077735/styles.css">
+<script src="_ds/modernist-370d9b9f-2d9d-4345-a6f3-7e9afb077735/_ds_bundle.js"></script>
+<script src="./image-slot.js"></script>
+<script src="./site-content.js"></script>
+<style>
+:root{--color-accent:#b1312c;--color-accent-100:#f7eded;--color-accent-200:#f0d6d5;--color-accent-300:#e3b0ae;--color-accent-400:#cd6b66;--color-accent-500:#b1312c;--color-accent-600:#9a2a26;--color-accent-700:#7d211d;--color-accent-800:#5e1815;--color-neutral-500:#8b8a8a;--color-divider:#8b8a8a}
+html{scroll-behavior:smooth}
+body{margin:0;text-wrap:pretty}
+a{color:var(--color-accent)}a:hover{color:var(--color-accent-700)}
+.wrap{max-width:1240px;margin:0 auto;padding:0 56px}
+.nav{padding-inline:max(56px,calc((100% - 1240px)/2 + 56px));position:sticky;top:0;background:var(--color-bg);z-index:20}
+.nav a{white-space:nowrap}
+.tb{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px}
+.tb li{position:relative;padding-left:22px;font-size:15.5px;line-height:1.6;color:var(--color-neutral-800)}
+.tb li::before{content:"";position:absolute;left:0;top:.55em;width:9px;height:9px;background:var(--color-accent)}
+@media (max-width:820px){.nav a:not(.btn){display:none}}
+
+@keyframes pgIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes pgOut{to{opacity:0;transform:translateY(-6px)}}
+body{animation:pgIn .42s cubic-bezier(.22,.61,.36,1) both}
+body.pg-out{animation:pgOut .26s cubic-bezier(.4,0,1,1) both}
+@media (prefers-reduced-motion:reduce){body,body.pg-out{animation:none}}
+.mmenu{display:none}
+@media (max-width:860px){
+  .nav{padding-inline:16px!important;gap:10px}
+  .nav>a{display:none!important}
+  .nav-brand{font-size:15px}
+  .mmenu{display:block;position:relative;margin-left:auto}
+  .mmenu>summary{list-style:none;display:flex;align-items:center;cursor:pointer;font-size:13px;letter-spacing:.08em;text-transform:uppercase;font-weight:700;border:2px solid var(--color-divider);padding:0 16px;min-height:44px;box-sizing:border-box}
+  .mmenu>summary::-webkit-details-marker{display:none}
+  .mmenu[open]>summary{background:var(--color-accent);border-color:var(--color-accent);color:var(--color-bg)}
+  .mmenu-panel{position:absolute;right:0;top:calc(100% + 10px);min-width:min(80vw,262px);background:var(--color-bg);border:2px solid var(--color-divider);display:grid;z-index:40}
+  .nav .mmenu-panel a{display:flex;align-items:center;min-height:54px;padding:0 18px;font-size:17px;color:var(--color-text);text-decoration:none;border-bottom:2px solid var(--color-divider)}
+  .nav .mmenu-panel a:last-child{border-bottom:0}
+  .nav .mmenu-panel a.btn{background:var(--color-accent);color:var(--color-bg);border:0;font-weight:700}
+  .wrap{padding-inline:20px!important}
+  .sw-row{padding:18px 20px!important;gap:14px!important}
+  .tscroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .tscroll table{min-width:560px}
+  img,iframe{max-width:100%}
+  [style*="repeat(2"],
+  [style*="repeat(3"],
+  [style*="1fr 1fr"],
+  [style*="6fr"],
+  [style*="5fr"],
+  [style*="7fr"],
+  [style*="240px)"]{grid-template-columns:minmax(0,1fr)!important}
+  [style*="repeat(4"],
+  [style*="repeat(5"]{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  [style*="gap:48px"],
+  [style*="gap: 48px"],
+  [style*="gap:56px"],
+  [style*="gap: 56px"]{gap:26px!important}
+  [style*="gap:32px"],
+  [style*="gap: 32px"]{gap:22px!important}
+  [style*="gap:16px 48px"],
+  [style*="gap: 16px 48px"]{gap:10px!important}
+  [style*="border-left:2px solid var(--color-divider)"],
+  [style*="border-left: 2px solid var(--color-divider)"]{border-left:0!important;border-top:2px solid var(--color-divider)!important}
+  [style*="border-right:2px solid var(--color-divider)"],
+  [style*="border-right: 2px solid var(--color-divider)"]{border-right:0!important;border-bottom:2px solid var(--color-divider)!important}
+  [style*="min-width:320px"],
+  [style*="min-width: 320px"],
+  [style*="min-width:340px"],
+  [style*="min-width: 340px"],
+  [style*="min-width:260px"],
+  [style*="min-width: 260px"]{min-width:0!important}
+  [style*="padding-top:64px"],
+  [style*="padding-top: 64px"],
+  [style*="padding-top:56px"],
+  [style*="padding-top: 56px"]{padding-top:34px!important}
+  [style*="padding-bottom:64px"],
+  [style*="padding-bottom: 64px"]{padding-bottom:40px!important}
+  [style*="padding-bottom:56px"],
+  [style*="padding-bottom: 56px"]{padding-bottom:34px!important}
+  [style*="padding-top:44px"],
+  [style*="padding-top: 44px"]{padding-top:28px!important}
+  [style*="padding-bottom:44px"],
+  [style*="padding-bottom: 44px"]{padding-bottom:28px!important}
+  [style*="padding:28px"],
+  [style*="padding: 28px"]{padding:22px 0!important}
+  [style*="padding:28px 56px 28px 32px"],
+  [style*="padding: 28px 56px 28px 32px"]{padding:22px 20px!important}
+  [style*="padding:24px 32px 12px 56px"],
+  [style*="padding: 24px 32px 12px 56px"]{padding:18px 20px!important}
+  [style*="padding:32px 20px"],
+  [style*="padding: 32px 20px"]{padding:22px 14px!important}
+  [style*="font-size:38px"],
+  [style*="font-size: 38px"]{font-size:26px!important}
+  [style*="font-size:46px"],
+  [style*="font-size: 46px"]{font-size:34px!important}
+  [style*="height:580px"],
+  [style*="height: 580px"]{height:560px!important}
+  [style*="height:420px"],
+  [style*="height: 420px"]{height:250px!important}
+  [style*="height:340px"],
+  [style*="height: 340px"]{height:210px!important}
+  [style*="height:280px"],
+  [style*="height: 280px"]{height:190px!important}
+  [style*="height:620px"],
+  [style*="height: 620px"]{height:460px!important}
+  [style*="height:150px"],
+  [style*="height: 150px"]{height:104px!important}
+  [style*="width:230px"],
+  [style*="width: 230px"],
+  [style*="width:200px;height:200px"],
+  [style*="width: 200px;height:200px"],
+  [style*="width:200px; height: 200px"],
+  [style*="width: 200px; height: 200px"]{width:126px!important;height:126px!important}
+  [style*="width:180px;height:180px"],
+  [style*="width: 180px;height:180px"],
+  [style*="width:180px; height: 180px"],
+  [style*="width: 180px; height: 180px"]{width:104px!important;height:104px!important}
+}
+@media (max-width:400px){
+  [style*="repeat(4"],
+  [style*="repeat(5"]{grid-template-columns:minmax(0,1fr)!important}
+  [style*="height:580px"],
+  [style*="height: 580px"]{height:610px!important}
+  div[style*="repeat(4,minmax"],
+  div[style*="repeat(4, minmax"]{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+</style>
+<script>
+(function(){
+  document.addEventListener('click', function(e){
+    var a = e.target && e.target.closest && e.target.closest('a');
+    if (!a || a.target === '_blank' || e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return;
+    var h = a.getAttribute('href') || '';
+    if (!h || h.charAt(0) === '#' || /^(https?:|mailto:|tel:)/.test(h) || h.indexOf('.html') === -1) return;
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion:reduce)').matches) return;
+    e.preventDefault();
+    document.body.classList.add('pg-out');
+    setTimeout(function(){ location.href = h; }, 230);
+  });
+  window.addEventListener('pageshow', function(ev){ if (ev.persisted) document.body.classList.remove('pg-out'); });
+})();
+</script>
+</helmet>
+
+<nav class="nav">
+  <span class="nav-brand" style="display:inline-flex;align-items:center;gap:12px"><img src="assets/stemworks-logo.png" alt="STEMWorks" style="width:34px;height:34px;object-fit:contain">STEMWorks</span>
+  <a href="index.html">Home</a>
+  <a href="teams.html">Teams</a>
+  <a href="sponsors.html" aria-current="page">Sponsors</a>
+  <a href="join.html">Join</a>
+  <a href="contact.html">Contact</a>
+  <a class="btn btn-primary" href="contact.html" style="color:var(--color-bg)">Contact us</a>
+  <details class="mmenu">
+    <summary aria-label="Site menu">Menu</summary>
+    <div class="mmenu-panel">
+      <a href="index.html">Home</a>
+      <a href="teams.html">Teams</a>
+      <a href="sponsors.html">Sponsors</a>
+      <a href="join.html">Join</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSdrQzMawFQGHqU3Pa2a1JRswIGY3d0DaNNTG13QjKAcAu2laQ/viewform" target="_blank" rel="noopener">Join Now!</a>
+    </div>
+  </details>
+</nav>
+
+<div class="wrap" style="padding-top:64px;padding-bottom:44px">
+  <span style="display:block;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--color-accent-700);margin:0 0 20px">Support the club</span>
+  <h1 style="font-size:clamp(48px,7vw,96px);line-height:1.02;letter-spacing:-.03em;margin:0 0 24px;margin-left:-.058em">Sponsor <span style="color:var(--color-accent)">STEMWorks</span></h1>
+  <p style="font-size:18px;line-height:1.65;max-width:58ch;margin:0 0 28px;color:var(--color-neutral-800)">Five competition teams at James Martin High School run on donated materials, tooling, and entry fees. Sponsorship pays for the parts students actually build with — and puts your name on the machines that carry them to competition.</p>
+  <div style="display:flex;gap:12px;flex-wrap:wrap">
+    <a class="btn btn-primary" href="contact.html">Become a sponsor</a>
+    <a class="btn btn-secondary" href="#tiers">See the tiers</a>
+  </div>
+</div>
+
+<hr style="height:2px;border:0;margin:0;background:var(--color-divider)">
+
+<div class="wrap" style="padding-top:44px;padding-bottom:44px">
+  <span style="display:block;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--color-accent-700);margin:0 0 24px">Where the money goes</span>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);border-top:2px solid var(--color-divider);border-bottom:2px solid var(--color-divider)">
+    <div style="padding:28px 28px 28px 0"><h3 style="font-size:22px;margin:0 0 10px">Materials and parts</h3><p style="margin:0;font-size:15px;line-height:1.65;color:var(--color-neutral-800)">Aluminium, carbon, motors, controllers, batteries, solar cells, airframes, and the spares that keep a build alive through testing.</p></div>
+    <div style="padding:28px;border-left:2px solid var(--color-divider)"><h3 style="font-size:22px;margin:0 0 10px">Entry and travel</h3><p style="margin:0;font-size:15px;line-height:1.65;color:var(--color-neutral-800)">Registration for the Solar Car Challenge, RoboBoat, FIRST, the American Rocketry Challenge, and the Bell drone competition — plus getting students there.</p></div>
+    <div style="padding:28px;border-left:2px solid var(--color-divider)"><h3 style="font-size:22px;margin:0 0 10px">Tools and shop</h3><p style="margin:0;font-size:15px;line-height:1.65;color:var(--color-neutral-800)">Machining, fabrication, and electronics equipment in Room 140A that every one of the five teams shares.</p></div>
+  </div>
+</div>
+
+<div class="wrap" id="tiers" style="padding-top:24px;padding-bottom:16px;scroll-margin-top:80px">
+  <span style="display:block;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--color-accent-700);margin:0 0 24px">Sponsorship tiers</span>
+
+  <div style="display:grid;grid-template-columns:minmax(0,240px) minmax(0,1fr);gap:16px 48px;align-items:start;padding:32px 0;border-top:2px solid var(--color-divider)">
+    <div>
+      <h3 style="font-size:32px;line-height:1.1;letter-spacing:-.015em;margin:0 0 8px">Tier I</h3>
+      <p style="margin:0;font-size:24px;font-weight:800;color:var(--color-accent);font-feature-settings:'tnum' 1">Under $500</p>
+    </div>
+    <ul class="tb">
+      <li>Logo on website</li>
+      <li>Mention and logo in all presentations and marketing materials</li>
+      <li>Mention on social media</li>
+    </ul>
+  </div>
+
+  <div style="display:grid;grid-template-columns:minmax(0,240px) minmax(0,1fr);gap:16px 48px;align-items:start;padding:32px 0;border-top:2px solid var(--color-divider)">
+    <div>
+      <h3 style="font-size:32px;line-height:1.1;letter-spacing:-.015em;margin:0 0 8px">Tier II</h3>
+      <p style="margin:0;font-size:24px;font-weight:800;color:var(--color-accent);font-feature-settings:'tnum' 1">$500 or more</p>
+    </div>
+    <ul class="tb">
+      <li>A logo of your company will be displayed on one chosen vehicle</li>
+      <li>A logo of your company will be printed on a chosen t-shirt</li>
+      <li>Logo on website</li>
+      <li>Mention and logo in all presentations and marketing materials</li>
+      <li>Mention on social media</li>
+    </ul>
+  </div>
+
+  <div style="display:grid;grid-template-columns:minmax(0,240px) minmax(0,1fr);gap:16px 48px;align-items:start;padding:32px 0;border-top:2px solid var(--color-divider)">
+    <div>
+      <h3 style="font-size:32px;line-height:1.1;letter-spacing:-.015em;margin:0 0 8px">Tier III</h3>
+      <p style="margin:0;font-size:24px;font-weight:800;color:var(--color-accent);font-feature-settings:'tnum' 1">$750 or more</p>
+    </div>
+    <ul class="tb">
+      <li>A logo of your company will be displayed on three chosen vehicles</li>
+      <li>A logo of your company will be printed on three chosen t-shirts</li>
+      <li>Logo on website</li>
+      <li>Mention and logo in presentations and marketing materials</li>
+      <li>Mention on social media</li>
+      <li>Logo on team trailers</li>
+    </ul>
+  </div>
+
+  <div style="display:grid;grid-template-columns:minmax(0,240px) minmax(0,1fr);gap:16px 48px;align-items:start;padding:32px 0;border-top:2px solid var(--color-divider);border-bottom:2px solid var(--color-divider)">
+    <div>
+      <h3 style="font-size:32px;line-height:1.1;letter-spacing:-.015em;margin:0 0 8px">Power Sponsor</h3>
+      <p style="margin:0;font-size:24px;font-weight:800;color:var(--color-accent);font-feature-settings:'tnum' 1">$1,500+</p>
+    </div>
+    <ul class="tb">
+      <li>A logo of your company will be displayed on all vehicles</li>
+      <li>A logo of your company will be printed on all t-shirts</li>
+      <li>Special thanks and logo on website</li>
+      <li>Mention and logo in presentations and marketing materials</li>
+      <li>Mention on social media</li>
+      <li>Logo on team trailer</li>
+    </ul>
+  </div>
+
+  <p style="margin:14px 0 0;font-size:13px;color:var(--color-neutral-700)">In-kind donations of material, tooling, machine time, or mentorship are welcome and are matched to the equivalent tier.</p>
+</div>
+
+<div class="wrap" style="padding-top:44px;padding-bottom:44px">
+  <span style="display:block;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--color-accent-700);margin:0 0 20px">Tiers at a glance</span>
+  <div class="tscroll"><table class="table">
+    <thead><tr><th>Benefit</th><th>Tier I</th><th>Tier II</th><th>Tier III</th><th>Power Sponsor</th></tr></thead>
+    <tbody>
+      <tr><td>Logo on website</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Special thanks and logo</td></tr>
+      <tr><td>Mention and logo in presentations and marketing materials</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+      <tr><td>Mention on social media</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+      <tr><td>Logo on a vehicle</td><td>—</td><td>One vehicle</td><td>Three vehicles</td><td>All vehicles</td></tr>
+      <tr><td>Logo on a t-shirt</td><td>—</td><td>One shirt</td><td>Three shirts</td><td>All shirts</td></tr>
+      <tr><td>Logo on team trailer</td><td>—</td><td>—</td><td>Yes</td><td>Yes</td></tr>
+    </tbody>
+  </table></div>
+</div>
+
+<div class="wrap" style="padding-top:24px;padding-bottom:56px">
+  <span style="display:block;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--color-accent-700);margin:0 0 20px">Current sponsors</span>
+  <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:2px;background:var(--color-divider);border:2px solid var(--color-divider)">
+    <image-slot id="sp-1" shape="rect" style="width:100%;height:150px" placeholder="Sponsor logo"></image-slot>
+    <image-slot id="sp-2" shape="rect" style="width:100%;height:150px" placeholder="Sponsor logo"></image-slot>
+    <image-slot id="sp-3" shape="rect" style="width:100%;height:150px" placeholder="Sponsor logo"></image-slot>
+    <image-slot id="sp-4" shape="rect" style="width:100%;height:150px" placeholder="Sponsor logo"></image-slot>
+    <image-slot id="sp-5" shape="rect" style="width:100%;height:150px" placeholder="Sponsor logo"></image-slot>
+    <image-slot id="sp-6" shape="rect" style="width:100%;height:150px" placeholder="Sponsor logo"></image-slot>
+    <image-slot id="sp-7" shape="rect" style="width:100%;height:150px" placeholder="Sponsor logo"></image-slot>
+    <image-slot id="sp-8" shape="rect" style="width:100%;height:150px" placeholder="Sponsor logo"></image-slot>
+  </div>
+</div>
+
+<section style="background:var(--color-accent);color:var(--color-bg)">
+  <div class="wrap" style="padding-top:64px;padding-bottom:64px;display:flex;align-items:center;gap:56px;flex-wrap:wrap">
+    <div style="flex:1;min-width:340px">
+      <h3 style="font-size:clamp(36px,4.6vw,56px);line-height:1.06;letter-spacing:-.015em;margin:0 0 12px;margin-left:-.058em">Put your name on the build.</h3>
+      <p style="margin:0 0 28px;font-size:18px;line-height:1.5;max-width:46ch">Reach out and we will send the sponsorship packet, current budget, and what each team still needs this season.</p>
+      <a class="btn btn-ghost" href="contact.html" style="color:var(--color-bg);border-color:var(--color-bg)">Contact STEMWorks</a>
+    </div>
+    <img src="assets/stemworks-logo.png" alt="" style="width:180px;height:180px;object-fit:contain;flex:none;filter:brightness(0) invert(1);opacity:.9">
+  </div>
+</section>
+
+<div class="wrap" style="padding-top:36px;padding-bottom:16px;display:grid;grid-template-columns:repeat(4,1fr);gap:32px;font-size:14px;line-height:1.7">
+  <div><span style="display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--color-accent-700);margin:0 0 10px">STEMWorks</span><p style="margin:0;color:var(--color-neutral-800)">James Martin High School<br>Room 140A</p></div>
+  <div><span style="display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--color-accent-700);margin:0 0 10px">Pages</span><p style="margin:0;display:flex;flex-direction:column"><a href="index.html">Home</a><a href="teams.html">Teams</a><a href="join.html">Join</a><a href="contact.html">Contact</a></p></div>
+  <div><span style="display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--color-accent-700);margin:0 0 10px">Teams</span><p style="margin:0;display:flex;flex-direction:column"><a href="teams.html#solar-car">Solar Car</a><a href="teams.html#roboboat">Roboboat</a><a href="teams.html#robotics">Robotics</a><a href="teams.html#mars">M.A.R.S.</a><a href="teams.html#drones">Drones</a></p></div>
+  <div><span style="display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--color-accent-700);margin:0 0 10px">Faculty sponsors</span><p style="margin:0;color:var(--color-neutral-800)">Mr. Hovey · Mr. Taylor<br>Mr. Searcey · Mr. Ogg<br>Ms. Ebanks</p></div>
+</div>
+<div class="wrap" style="padding-bottom:36px;font-size:13px;color:var(--color-neutral-700)">STEMWorks · James Martin High School</div>
+
+</x-dc>
+</body>
+</html>
