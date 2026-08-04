@@ -36,40 +36,18 @@ The three posts below are examples. Delete them once you have real ones.
 --------------------------------------------------------------------------
 
 
-# Roboboat qualifies for the international finals
+# RedShift Robotics Qualifies for State!
 
-date: 2026-05-02
-team: Roboboat
-result: Qualified - 4th of 22 in the semifinal round
+date: 2026-04-04
+team: Robotics
+result: Qualified for State Championship
 author: STEMWorks
-photo: assets/photos/boat-course.jpg | The hull running the navigation gate on the second attempt
+photo: https://drive.google.com/file/d/1RYCxeZdauh0qurLRsU6c8X49OX9a-hkn/view?usp=sharing
 
-Replace this paragraph with what actually happened. Two or three short paragraphs is plenty. The team spent the week before the event rewriting the obstacle-avoidance loop, and it held up.
-
-A second paragraph reads like this one. Leave a blank line between paragraphs and the site does the rest.
-
-photos:
-assets/photos/boat-pool-test.jpg | Pool testing the week before
-assets/photos/boat-launch.jpg | Launch morning
-assets/photos/boat-team.jpg | The full team after the semifinal
+We’re proud to have secured the win and to compete alongside our amazing alliance partners Robonauts (118) and Spectrum (3847)! A huge thank you to the Gene Haas Foundation and Ser National for your continued support this season. Our next stop is the FIRST in Texas District Championship!
 
 
-# Build night, week 6
 
-date: 2026-04-18
-team: Club
-photo: assets/photos/club-build-night.jpg | Room 140A, 6:40pm
-
-A short post with one photo and a caption is a perfectly good post. Not everything needs to be an article.
-
-
-# Solar Car battery pack finished
-
-date: 2026-03-27
-team: Solar Car
-photo: assets/photos/solar-battery.jpg
-
-The pack is assembled, fused, and mounted. Next is the wiring harness and a full bench test before it goes in the car.
 
 link: https://docs.google.com/forms/d/e/1FAIpQLSdrQzMawFQGHqU3Pa2a1JRswIGY3d0DaNNTG13QjKAcAu2laQ/viewform
 linktext: Want in? Join STEMWorks
