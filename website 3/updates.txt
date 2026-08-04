@@ -63,13 +63,6 @@ photo: assets/photos/club-build-night.jpg | Room 140A, 6:40pm
 A short post with one photo and a caption is a perfectly good post. Not everything needs to be an article.
 
 
-# Solar Car battery pack finished
-
-date: 2026-03-27
-team: Solar Car
-photo: assets/photos/solar-battery.jpg
-
-The pack is assembled, fused, and mounted. Next is the wiring harness and a full bench test before it goes in the car.
 
 link: https://docs.google.com/forms/d/e/1FAIpQLSdrQzMawFQGHqU3Pa2a1JRswIGY3d0DaNNTG13QjKAcAu2laQ/viewform
 linktext: Want in? Join STEMWorks
